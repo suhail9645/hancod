@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hancod/features/service_listing/presentation/pages/bottom_nav_screen/bottom_nav_screen.dart';
 import 'package:hancod/features/service_listing/presentation/pages/home_screen/home_screen.dart';
+import 'package:hancod/features/service_listing/presentation/pages/service_listing_screen/service_listing_screen.dart';
 import 'package:hancod/features/user_auth/presentation/pages/login_screen/login_screen.dart';
 import 'package:hancod/features/user_auth/presentation/pages/otp_screen/otp_screen.dart';
 import 'package:hancod/features/user_auth/presentation/pages/welcome_screen/welcome_screen.dart';
@@ -37,7 +39,7 @@ class Hancode extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:HomeScreen()
+      home:ServiceListingScreen()
     );
   }
 }
