@@ -4,6 +4,7 @@ import 'package:hancod/core/manager/font_manager.dart';
 import 'package:hancod/core/manager/image_manager.dart';
 import 'package:hancod/core/manager/space_manager.dart';
 import 'package:hancod/core/utils/dimensions.dart';
+import 'package:hancod/features/user_auth/presentation/widgets/primary_button.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -47,12 +48,9 @@ class WelcomeScreen extends StatelessWidget {
               ],)
             ),
             appSpaces.spaceForHeight20,
-            Container(
-              height: 51,
-              width:  screenWidth(context)<400?double.infinity:400,
-              decoration: BoxDecoration(color: appColors.primary,borderRadius: BorderRadius.circular(10)),
-              child: Center(child: Text('Phone',style: appFont.f16w600White,),),
-            )
+            PrimaryButton(onTap: () {
+              
+            }, title: 'Phone')
 
           ],
         ),

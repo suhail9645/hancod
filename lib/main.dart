@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hancod/features/user_auth/presentation/pages/login_screen/login_screen.dart';
+import 'package:hancod/features/user_auth/presentation/pages/otp_screen/otp_screen.dart';
 import 'package:hancod/features/user_auth/presentation/pages/welcome_screen/welcome_screen.dart';
 
 void main() {
@@ -32,7 +34,7 @@ class Hancode extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: WelcomeScreen()
+      home:OtpScreen()
     );
   }
 }
