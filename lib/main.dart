@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:hancod/features/service_listing/presentation/pages/home_screen/home_screen.dart';
 import 'package:hancod/features/user_auth/presentation/pages/login_screen/login_screen.dart';
 import 'package:hancod/features/user_auth/presentation/pages/otp_screen/otp_screen.dart';
 import 'package:hancod/features/user_auth/presentation/pages/welcome_screen/welcome_screen.dart';
@@ -16,6 +18,7 @@ class Hancode extends StatelessWidget {
     return MaterialApp(
       title: 'Hancode',
       theme: ThemeData(
+        textTheme:GoogleFonts.nunitoTextTheme(),
         // This is the theme of your application.
         //
         // TRY THIS: Try running your application with "flutter run". You'll see
@@ -34,7 +37,7 @@ class Hancode extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:OtpScreen()
+      home:HomeScreen()
     );
   }
 }
