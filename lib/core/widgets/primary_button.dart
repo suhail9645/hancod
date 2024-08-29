@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:hancod/core/manager/font_manager.dart';
 import 'package:hancod/core/utils/dimensions.dart';
 
-import '../../../../core/manager/color_manager.dart';
+import '../manager/color_manager.dart';
 
 class PrimaryButton extends StatelessWidget {
   const PrimaryButton({

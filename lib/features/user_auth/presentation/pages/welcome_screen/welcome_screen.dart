@@ -4,7 +4,7 @@ import 'package:hancod/core/manager/font_manager.dart';
 import 'package:hancod/core/manager/image_manager.dart';
 import 'package:hancod/core/manager/space_manager.dart';
 import 'package:hancod/core/utils/dimensions.dart';
-import 'package:hancod/features/user_auth/presentation/widgets/primary_button.dart';
+import 'package:hancod/core/widgets/primary_button.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});

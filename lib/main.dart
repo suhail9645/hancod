@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hancod/features/cart/persentation/pages/cart_screen/cart_screen.dart';
 import 'package:hancod/features/service_listing/presentation/pages/bottom_nav_screen/bottom_nav_screen.dart';
 import 'package:hancod/features/service_listing/presentation/pages/home_screen/home_screen.dart';
 import 'package:hancod/features/service_listing/presentation/pages/service_listing_screen/service_listing_screen.dart';
@@ -39,7 +40,7 @@ class Hancode extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:ServiceListingScreen()
+      home:CartScreen()
     );
   }
 }

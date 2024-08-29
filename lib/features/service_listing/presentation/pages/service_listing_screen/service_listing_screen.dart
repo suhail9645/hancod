@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:hancod/core/manager/color_manager.dart';
 import 'package:hancod/core/manager/font_manager.dart';
 import 'package:hancod/core/manager/space_manager.dart';
+import 'package:hancod/core/widgets/primary_appbar.dart';
 
 class ServiceListingScreen extends StatefulWidget {
   const ServiceListingScreen({super.key});
@@ -23,28 +24,9 @@ class _ServiceListingScreenState extends State<ServiceListingScreen> {
           appSpaces.spaceForHeight20,
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15),
-            child: Row(
-              children: [
-                Container(
-                  height: 32,
-                  width: 32,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: const Color.fromARGB(255, 237, 245, 245)),
-                  child: const Center(
-                    child: Icon(
-                      Icons.keyboard_arrow_left_outlined,
-                      color: Color(0xff1D1617),
-                    ),
-                  ),
-                ),
-                appSpaces.spaceForWidth20,
-                Text(
-                  'Cleaning Services',
-                  style: appFont.f15w600Black,
-                )
-              ],
-            ),
+            child: PrimaryAppBar(title: 'Cleaning Services', onBack: () {
+              
+            },),
           ),
           appSpaces.spaceForHeight20,
           ColoredBox(
@@ -246,3 +228,4 @@ class _ServiceListingScreenState extends State<ServiceListingScreen> {
     );
   }
 }
+

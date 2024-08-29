@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hancod/core/manager/font_manager.dart';
 import 'package:hancod/core/manager/space_manager.dart';
-import 'package:hancod/features/user_auth/presentation/widgets/primary_button.dart';
+import 'package:hancod/core/widgets/primary_button.dart';
 import 'package:pinput/pinput.dart';
 class OtpScreen extends StatelessWidget {
  const OtpScreen({super.key});

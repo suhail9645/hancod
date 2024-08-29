@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:hancod/core/manager/font_manager.dart';
 import 'package:hancod/core/manager/space_manager.dart';
-import 'package:hancod/features/user_auth/presentation/widgets/primary_button.dart';
+import 'package:hancod/core/widgets/primary_button.dart';
 class LoginScreen extends StatelessWidget {
  const LoginScreen({super.key});
  @override
