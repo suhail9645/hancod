@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "251455332928",
+    "project_id": "hancode-stg",
+    "storage_bucket": "hancode-stg.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251455332928:android:d6f5ba7cf50c7b932ff5a5",
+        "android_client_info": {
+          "package_name": "com.example.app.stg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl8kzn7QNLug3ynJu8HLHASfKnSoq0Ibk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

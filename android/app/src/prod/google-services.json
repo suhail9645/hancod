@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "705923656026",
+    "project_id": "hancode-9fe78",
+    "storage_bucket": "hancode-9fe78.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705923656026:android:9d477eb286c44ea8d56b63",
+        "android_client_info": {
+          "package_name": "com.example.hancod"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhttsiQ1oaYStJhn2UFVRmFxa0l3x3BNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

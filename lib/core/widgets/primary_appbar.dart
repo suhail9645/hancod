@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:hancod/core/manager/font_manager.dart';
 
 import '../manager/space_manager.dart';
@@ -14,16 +15,19 @@ class PrimaryAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Container(
-          height: 32,
-          width: 32,
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: const Color.fromARGB(255, 237, 245, 245)),
-          child: const Center(
-            child: Icon(
-              Icons.keyboard_arrow_left_outlined,
-              color: Color(0xff1D1617),
+        GestureDetector(
+          onTap: () => context.pop(),
+          child: Container(
+            height: 32,
+            width: 32,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: const Color.fromARGB(255, 237, 245, 245)),
+            child: const Center(
+              child: Icon(
+                Icons.keyboard_arrow_left_outlined,
+                color: Color(0xff1D1617),
+              ),
             ),
           ),
         ),

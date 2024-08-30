@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:hancod/core/manager/color_manager.dart';
 import 'package:hancod/core/manager/font_manager.dart';
 import 'package:hancod/core/manager/space_manager.dart';
@@ -172,26 +173,31 @@ class HomeScreen extends StatelessWidget {
                               padding: EdgeInsets.zero,
                               child: Column(
                                 children: [
-                                  Container(
-                                    margin: const EdgeInsets.only(bottom: 9),
-                                    height: screenWidth(context) * 0.16,
-                                    width: screenWidth(context) * 0.16,
-                                    decoration: BoxDecoration(
-                                        shape: BoxShape.circle,
-                                        color: const Color(0xffF7F7F7),
-                                        border: index == 7
-                                            ? Border.all(color: Colors.grey)
-                                            : null),
-                                    child: Center(
-                                        child: index != 7
-                                            ? Image.asset(
-                                                images[index],
-                                                height: 30,
-                                              )
-                                            : Icon(
-                                                Icons.arrow_forward_outlined,
-                                                color: appColors.primary,
-                                              )),
+                                  GestureDetector(
+                                    onTap: () {
+                                      context.push('/serviceListingScreen');
+                                    },
+                                    child: Container(
+                                      margin: const EdgeInsets.only(bottom: 9),
+                                      height: screenWidth(context) * 0.16,
+                                      width: screenWidth(context) * 0.16,
+                                      decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          color: const Color(0xffF7F7F7),
+                                          border: index == 7
+                                              ? Border.all(color: Colors.grey)
+                                              : null),
+                                      child: Center(
+                                          child: index != 7
+                                              ? Image.asset(
+                                                  images[index],
+                                                  height: 30,
+                                                )
+                                              : Icon(
+                                                  Icons.arrow_forward_outlined,
+                                                  color: appColors.primary,
+                                                )),
+                                    ),
                                   ),
                                   Text(
                                     index != 7 ? titles[index] : 'See All',
